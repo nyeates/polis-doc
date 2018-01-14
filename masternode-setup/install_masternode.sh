@@ -121,13 +121,14 @@ fi
 echo && echo "Downloading ..."
 sleep 3
 wget https://github.com/polispay/polis/releases/download/v1.2.0/poliscore-1.2.0-linux.zip
+sudo apt install unzip
 unzip poliscore-1.2.0-linux.zip
 rm poliscore-1.2.0-linux.zip
 
 # Install polis
 echo && echo "Installing poliscore-1.2.0..."
 sleep 3
-sudo mv ~/poliscore-1.1.0/usr/local/bin/polis{d,-cli} /usr/local/bin
+sudo mv ~/poliscore-1.2.0-linux/usr/local/bin/polis{d,-cli} /usr/local/bin
 
 # Create config for poliscore
 echo && echo "Configuring poliscore-1.2.0..."
